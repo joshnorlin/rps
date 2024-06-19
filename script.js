@@ -1,14 +1,3 @@
-// create a rock paper scissors game
-
-// inputs:
-// 1. rps user choice
-
-// variables:
-// 1. user choice
-// 2. computer "choice"
-// 3. user score and computer score
-// 4. etc.
-
 // generates the computer's choice (that is, rock, paper, or scissors)
 function getComputerChoice() {
     let numberAction = Math.floor(Math.random() * 3); // generates a number between 1 and 3, inclusive.
@@ -24,7 +13,7 @@ function getComputerChoice() {
 // gets the user's choice
 function getUserChoice() {
     let userChoice = prompt("Rock, Paper, or Scissors?");
-    userChoice = userChoice.toLowerCase();
+    userChoice = userChoice.toLowerCase(); // sanitizes code to account for capitalization differences.
     while(!(
         userChoice === 'rock' || 
         userChoice === 'paper' || 
