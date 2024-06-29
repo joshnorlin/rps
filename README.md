@@ -1,1 +1,1 @@
-Rock Paper Scissors game played in the console.
+Rock Paper Scissors game played in browser with UI.
